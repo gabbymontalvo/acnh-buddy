@@ -11,4 +11,4 @@
 - scrape data, get into usable formate (tables/csv)
 
 # Phase 2: Create Check-Off Style Dashboard
-- pick a UI designer (streamlit maybe) 
+- pick a UI designer (react!!)
