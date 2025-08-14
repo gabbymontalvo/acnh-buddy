@@ -23,13 +23,19 @@ fossils = []
 for row in fossil_table.find_all('tr')[1:]:
     cells = row.find_all('td')
     name = cells[0].get_text(strip = True)
-    price = cells[2].get_text(strip = True)
-    museum = cells[4].get_text(strip = True)
+
+    img_tag = cells[1].find('img')
+    img_url = None
+    if img_tag and 'src' in img_tag.attrs:
+        img_url = img_tag['src']
+
+
+    price = cells[2].get_text(strip = True).replace("Bells", " Bells")
 
     fossils.append({
         'name': name,
         'sell_price': price,
-        'museum_desc': museum
+        'image_url': img_url,
     })
 
 # run to make sure works!
