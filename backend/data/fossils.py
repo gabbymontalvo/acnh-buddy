@@ -24,13 +24,16 @@ for row in fossil_table.find_all('tr')[1:]:
     cells = row.find_all('td')
     name = cells[0].get_text(strip = True)
 
+    # wooo get image
     img_tag = cells[1].find('img')
     img_url = None
+    # trying to access attrs maybe?
+    # (worked)
     if img_tag and 'src' in img_tag.attrs:
         img_url = img_tag['src']
 
 
-    price = cells[2].get_text(strip = True).replace("Bells", " Bells")
+    price = cells[2].get_text(strip = True).replace('Bells', ' Bells')
 
     fossils.append({
         'name': name,
