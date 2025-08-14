@@ -23,7 +23,7 @@ fossils = []
 for row in fossil_table.find_all('tr')[1:]:
     cells = row.find_all('td')
     name = cells[0].get_text(strip = True)
-    price = cells[3].get_text(strip = True)
+    price = cells[2].get_text(strip = True)
     museum = cells[4].get_text(strip = True)
 
     fossils.append({
