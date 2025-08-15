@@ -8,8 +8,8 @@
 # Phase 1: Data Collection/Cleaning
 - will be using data from Nookipedia, largest online encyclopedia for all things Animal Crossing
 - decide whether using api or webscraping (probably webscraping)
-- scrape data, get into usable formate (tables/csv)
-Date completed:
+- scrape data, get into usable formate (tables/dicts)
+Date completed: 8/14/25
 
 # Phase 2: Create Check-Off Style Dashboard in frontend
 - pick a UI designer (react!!)
